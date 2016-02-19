@@ -2,8 +2,37 @@
 <html>
 <head>
 	<title>Listo</title>
-	</head>
+	<link rel="stylesheet" href="app/styles/main.css" charset="utf-8">
+</head>
 <body>
+	<div class='new-item-header'>
+		<button href="#" class="pull-right pencil" id="newListItem" style="">New</button>
+	</div>
+	<form id="newTaskForm">
+		<label>New To-Do Item</label>
+	  <input id="newItemInput" placeholder="new task">
+	  <button id="saveNewItem">Save</button>
+	  <button id="cancel">Cancel</button>
+	</form>
+	<div class="panel">
+		New To-Do Items
+	</div>
+	<div class="panel">
+		In Progress To-Do Items
+	</div>
+	<div class="panel">
+		Completed To-Do Items
+	</div>
+	<div class="panel">
+		<ul id="newList"></ul>
+	</div>
+	<div class="panel">
+		<ul id="currentList"></ul>
+	</div>
+	<div class="panel">
+		<ul id="archivedList"></ul>
+	</div>
+
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="app/scripts/app.js"></script>
 </body>
